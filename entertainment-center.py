@@ -1,6 +1,7 @@
 import movies
 import fresh_tomatoes
 
+# create list of movies to display
 list_of_movies = [
     movies.Movie("Avatar", "Marine on an alien planet",
                  "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",  # NOQA
@@ -22,4 +23,5 @@ list_of_movies = [
                  "https://www.youtube.com/watch?v=3PsUJFEBC74")
     ]
 
+# call fresh tomatoes to create and open the webpage
 fresh_tomatoes.open_movies_page(list_of_movies)

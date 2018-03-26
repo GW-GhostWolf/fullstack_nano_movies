@@ -2,6 +2,7 @@ import webbrowser
 
 
 class Movie():
+    """Hold the movie title, storyline, poster image URL, trailer URL"""
     def __init__(self, title, story, image, trailer):
         self.title = title
         self.storyline = story
@@ -9,4 +10,5 @@ class Movie():
         self.trailer_youtube_url = trailer
 
     def show_trailer(self):
+        """Show the movie's trailer"""
         webbrowser.open(self.youtube_trailer)
